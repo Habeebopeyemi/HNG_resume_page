@@ -1,0 +1,258 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  line-height: 1.3rem;
+  font-family: sans-serif;
+}
+
+
+
+body{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.container{
+  display: flex;
+  flex-flow: row wrap;
+}
+header{
+  width: 100%;
+  height: 50vh;
+  background-image: url(./images/mobile-image-hero-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* padding: 1rem; */
+  position:relative;
+}
+#navbar{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.nav-toggle{
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: white;
+  padding: 2rem;
+
+}
+.icon-close{
+  margin-right:2.5rem;
+}
+.nav-link{
+  color: black;
+}
+.hidden{
+  display: none;
+}
+.scroll-icon{
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  width:35%;
+  box-sizing: inherit;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.icon-div, .logo-div{
+  display: block;
+  width: 50%;
+  padding: .5rem;
+  text-align: center;
+}
+.icon-div:hover, .logo-div:hover{
+  background-color: gray;
+}
+
+.shop{
+  padding: 2rem;
+}
+.shop{
+  margin: 0 0;
+}
+.section-title, .section-text{
+  margin: 0 0 1rem 0;
+}
+.section-text, .about-text{
+  color: gray;
+  text-align: start;
+}
+.section-text{
+  font-size: .8rem;
+}
+.btn-navigation{
+  display: flex;
+}
+.btn-shop-now{
+  border: none;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: .5rem;
+  margin: 0 3rem 0 0;
+  text-decoration: none;
+}
+.icon-arrow{
+  font-size: 1rem;
+}
+.nav-link:hover, .scroll-icon:hover, .btn-shop-now:hover{
+  cursor: grab;
+}
+.about{
+  width:100%;
+  padding: 2rem;
+}
+.about > p{
+  font-size: .8rem;
+}
+.about-title{
+  text-transform: uppercase;
+}
+.product-show-case-1, .product-show-case-2{
+  width: 100%;
+  /* max-width: 400px; */
+  height: 30vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.product-show-case-1{
+  background-image: url(./images/image-about-dark.jpg);
+}
+.product-show-case-2{
+  background-image:url(./images/image-about-light.jpg);
+}
+.about-title, about-text{
+  margin: 0 0 1rem 0;
+}
+@media only screen and (min-width: 400px){
+  header{
+    background-image: url(./images/desktop-image-hero-1.jpg);
+  }
+}
+@media only screen and (min-width: 500px){
+  #navbar{
+    display: flex;
+    flex-direction: row;
+  }
+  .hamburger{
+    display: none;
+  }
+  .nav-toggle{
+    width: 30%;
+  }
+  
+  .hidden{
+    display: flex;
+  }
+  ul {
+    width: 70%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: transparent;
+    padding: 2rem;
+  
+  }
+  .icon-close{
+    display: none;
+  }
+  .nav-link{
+    color: white;
+  }
+  .nav-link:hover{
+    text-decoration: underline;
+    transition: .5s ease;
+  }
+}
+@media only screen and (min-width: 650px){
+  .scroll-icon{
+    width: 20%;
+  }
+  .shop{
+    padding: 2rem;
+    margin: 0 0;
+  }
+  .section-title{
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .about-product{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  .product-show-case-1{
+    flex: 0 1 50%;
+  }
+  .about{
+    flex: 0 1 50%;
+    margin-top: 0;
+    padding: 0 2rem;
+  }
+}
+@media only screen and (min-width: 800px){
+  header{
+    flex: 0 1 60%;
+  }
+  .shop{
+    flex: 0 1 40%;
+    margin: 0 0;
+  }
+  .about-product{
+    padding: 0;
+  }
+  .product-show-case-1{
+    flex: 0 1 30%;
+  }
+  .about{
+    flex: 0 1 40%;
+    margin-top: 0;
+  }
+  .product-show-case-2{
+    flex: 0 1 30%;
+  }
+}
+@media only screen and (min-width: 900px){
+  #navbar{
+    justify-content: left;
+    width: 80%;
+  }
+  ul{
+    justify-content: flex-start;
+  }
+  .nav-link{
+    padding: 0 1rem 0 0;
+  }
+  .shop{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  .slide{
+    padding: 1rem;
+  }
+}
+@media only screen and (min-width: 1000px){
+  .scroll-icon{
+    right: -20%;
+  }
+}
+
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
